@@ -1,4 +1,9 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue'
+import App from './App.vue'
+import '@/styles/index.scss'
+import { Lazyload } from 'vant'
+const app = createApp(App)
 
-createApp(App).mount("#app");
+app.use(Lazyload)
+
+app.mount('#app')
